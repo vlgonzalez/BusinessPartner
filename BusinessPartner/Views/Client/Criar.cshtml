@@ -1,0 +1,42 @@
+@model BusinessPartner.Models.Client
+
+@{
+    ViewData["Title"] = "Criar novo Client";
+}
+
+<h1>Criar novo Cliente</h1>
+
+<br/>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Criar">
+            <div class="form-grup"> 
+                <label asp-for="CardName" class="control-lable"></label>
+                <input asp-for="CardName" class="form-control"/>
+            </div>
+            <div class="form-grup"> 
+                <label asp-for="Avatar" class="control-lable"></label>
+                <input asp-for="Avatar" class="form-control"/>
+            </div>
+            <div class="form-grup"> 
+                <label asp-for="Address" class="control-lable"></label>
+                <input asp-for="Address" class="form-control"/>
+            </div>
+            <div class="form-grup"> 
+                <label asp-for="ZipCode" class="control-lable"></label>
+                <input asp-for="ZipCode" class="form-control"/>
+            </div>
+             <div class="form-grup"> 
+                <label asp-for="CardCode" class="control-lable"></label>
+                <input asp-for="CardCode" class="form-control"/>
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="submit" value="Criar" class="btn btn-primary" />
+            </div>            
+        </form>
+    </div>
+</div>
+<br>
+<a asp-action="Index">Voltar</a>

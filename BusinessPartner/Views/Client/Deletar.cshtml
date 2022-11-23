@@ -1,0 +1,49 @@
+@model BusinessPartner.Models.Client
+
+@{
+    ViewData["Title"] = "Deletar  Cliente";
+}
+
+<h1 style="color: red ;">Deseja Realmente deletar esse contato? Essa operação é irreversivel</h1>
+
+</hr>
+
+<div>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor( x => x.CardName)
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.CardName)
+        </dt>
+         <dt class="col-sm-2">
+            @Html.DisplayNameFor( x => x.Avatar)
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.Avatar)
+        </dt>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor( x => x.Address)
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.Address)
+        </dt>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor( x => x.ZipCode)
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.ZipCode)
+        </dt>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor( x => x.CardCode)
+        </dt>
+        <dt class="col-sm-10">
+            @Html.DisplayFor(x => x.CardCode)
+        </dt>
+    </dl>
+</div>
+
+<form asp-action="Deletar">
+    <input type="submit" value="Deletar" class=" btn btn-danger">
+</form>
+<a asp-action="Index">Voltar</a>
